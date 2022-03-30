@@ -1,6 +1,26 @@
-.container.bg-primary
-  ul.nav
-    li.nav-item
-      a.nav-link(href="/") Startseite
-    li.nav-item
-      a.nav-link(href="/angebote") Angebote
+header.container-fluid
+  .row.navbar.bg-secondary
+    .col-4.schrift
+      ul.nav.d-none.d-md-block
+        li.nav-item
+          a.nav-link(href="/angebote").a Angebote 
+        li.nav-item
+          a.nav-link(href="/preise").a Preise 
+        li.nav-item
+          a.nav-link(href="/ablauf").a Ablauf
+        img.underline(src="/assets/Fullunderline.svg", alt="fullunderline")
+        
+    .col-4
+      a.d-flex.justify-content-center(href="/") 
+        img.logo(src="/assets/logo.svg", alt="Logo")
+    .col-4
+      a.d-flex.justify-content-center(href="/terminbuchen")
+        .tb
+          //- include ../dist/assets/tbhintergrund.svg
+          .on-normal
+            img.img-fluid(src="/assets/tbhintergrund.svg", alt="tbhweiß")
+          .on-hover
+            img.img-fluid(src="/assets/tbhintergrundweiß.svg", alt="tbhweiß")
+  
+  .row.row-wave
+
