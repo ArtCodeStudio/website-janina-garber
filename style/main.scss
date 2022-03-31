@@ -1,7 +1,15 @@
+// Bootstrap
 @import "bootstrap";
+
+// Riba
+@import "../node_modules/@ribajs/core/src/index.scss";
+@import "../node_modules/@ribajs/bs5/src/index.scss";
+@import "../node_modules/@ribajs/router/src/index.scss";
+
+// Custom
 @import "footer";
 @import "header";
-
+@import "sidebar";
 
 .schrift {
     font-family: "Indie Flower", cursive;
@@ -82,7 +90,7 @@
 
 .main-content {
     min-height: 60vh;
-    margin-top: 20px;
+    margin-top: 125px;
 }
 
 .schrift2 {

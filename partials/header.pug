@@ -8,7 +8,13 @@ header.container-fluid
           a.nav-link(href="/preise").a Preise 
         li.nav-item
           a.nav-link(href="/ablauf").a Ablauf
-      //- img.underline(src="/assets/Fullunderline.svg", alt="fullunderline")
+      .d-flex.d-md-none.align-items-center
+        bs5-toggle-button(target-id="main-sidebar")
+          ul.nav
+            li.nav-item.d-flex.align-items-center
+              bs5-icon(src="/assets/iconset/svg/icon_menu.svg" size="64" rv-hide="isActive" rv-on-click="toggle")
+            li.nav-item.d-flex.align-items-center
+              bs5-icon(src="/assets/iconset/svg/icon_close.svg" size="64" rv-show="isActive" rv-on-click="toggle")
         
     .col.d-none.d-md-flex
       a.d-flex.justify-content-center(href="/") 
