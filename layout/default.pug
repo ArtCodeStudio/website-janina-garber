@@ -9,8 +9,9 @@ html(lang='de')
 
   body
     include ../partials/header.pug
-    .main-content
-      block content
+    router-view#main
+      .main-content
+        block content
     include ../partials/footer.pug
     script(async src="vendors.bundle.js")
     script(async src="main.bundle.js")

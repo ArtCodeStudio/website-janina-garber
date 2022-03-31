@@ -1,6 +1,6 @@
 # website-janina-garber
 
-This project was realized by a student trainee of the 10th grade and is therefore an exercise project but at the same time also a small customer project.
+This project was realized by a student trainee of the 11th grade and is therefore an exercise project but at the same time also a small customer project.
 
 ## Development Setup
 
@@ -114,4 +114,4 @@ To build the source code now execute the following command, this must always run
 npm run start
 ```
 
-This will watch for file changes and starts a web server with a auto reload function. After you have successfully set up this project, you will mostly only need this command to continue working. 
+This will watch for file changes and starts a web server with a auto reload function. After you have successfully set up this project, you will mostly only need this command to continue working.
