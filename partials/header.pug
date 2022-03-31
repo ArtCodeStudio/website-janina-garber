@@ -1,32 +1,29 @@
 header.container-fluid
   .row.navbar.bg-secondary
-    .col-5.schrift
-      ul.nav.d-none.d-md-flex.flex-nowrap
+    .col-6.schrift
+      ul.nav.d-none.d-lg-flex.flex-nowrap
         li.nav-item
           a.nav-link(href="/angebote").a Angebote 
         li.nav-item
           a.nav-link(href="/preise").a Preise 
         li.nav-item
           a.nav-link(href="/ablauf").a Ablauf
-      .d-flex.d-md-none.align-items-center
+      .d-flex.d-lg-none.align-items-center
         bs5-toggle-button(target-id="main-sidebar")
           ul.nav
             li.nav-item.d-flex.align-items-center
               bs5-icon(src="/assets/iconset/svg/icon_menu.svg" size="64" rv-hide="isActive" rv-on-click="toggle")
             li.nav-item.d-flex.align-items-center
               bs5-icon(src="/assets/iconset/svg/icon_close.svg" size="64" rv-show="isActive" rv-on-click="toggle")
-        
-    .col.d-none.d-md-flex
-      a.d-flex.justify-content-center(href="/") 
-        img.logo.flex-fill(src="/assets/logo.svg", alt="Logo")
-    .col-5
-      a.d-flex.justify-content-center(href="/terminbuchen")
+    .col-6
+      a.d-none.d-lg-flex.justify-content-center(href="/terminbuchen")
         .tb
-          //- include ../dist/assets/tbhintergrund.svg
           .on-normal
-            img.img-fluid(src="/assets/tbhintergrund.svg", alt="tbhweiß")
+            img.img-fluid.d-block.ms-auto(src="/assets/tbhintergrund.svg", alt="tbhweiß")
           .on-hover
-            img.img-fluid(src="/assets/tbhintergrundweiß.svg", alt="tbhweiß")
+            img.img-fluid.d-block.ms-auto(src="/assets/tbhintergrundweiß.svg", alt="tbhweiß")
+  a.logo.d-flex.justify-content-center(href="/") 
+    img.img-fluid(src="/assets/logo.svg", alt="Logo")
   
   .row.row-wave
 

@@ -1,18 +1,18 @@
 header {
     position: fixed;
     top: 0;
-    z-index: 99999;
-    .logo {
-        position: relative;
-        top: 110px;
-        width: 100%;
-        max-width: 100%;
-        width: 60%;
-        height: auto;
-        transition: all 200ms ease-in-out;
-        &:hover {
-            transform: scale(1.05); 
-        }
+    z-index: 99999;   
+}
+
+.logo {
+    position: absolute;
+    top: 14px;
+    left: calc(50% - 88px);
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        transform: scale(1.05); 
     }
-    
 }
