@@ -103,7 +103,7 @@ typings/
 .tern-port
 
 # Build files
-/dist/*.html
-/dist/*.css
-/dist/*.map
+/dist/*
 !/dist/assets
+/dist/assets/iconset
+/dist/assets/images/vendors
