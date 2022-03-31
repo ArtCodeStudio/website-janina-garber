@@ -5,7 +5,10 @@ html(lang='de')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href='/main.css' rel='stylesheet')
     title Janina Garber | Pferdeosteopathie
+    link(rel='icon' href='/assets/Icon.svg')
+
   body
     include ../partials/header.pug
-    block content
+    .main-content
+      block content
     include ../partials/footer.pug

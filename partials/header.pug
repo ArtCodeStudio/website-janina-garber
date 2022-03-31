@@ -1,19 +1,19 @@
 header.container-fluid
   .row.navbar.bg-secondary
-    .col-4.schrift
-      ul.nav.d-none.d-md-block
+    .col-5.schrift
+      ul.nav.d-none.d-md-flex.flex-nowrap
         li.nav-item
           a.nav-link(href="/angebote").a Angebote 
         li.nav-item
           a.nav-link(href="/preise").a Preise 
         li.nav-item
           a.nav-link(href="/ablauf").a Ablauf
-        img.underline(src="/assets/Fullunderline.svg", alt="fullunderline")
+      //- img.underline(src="/assets/Fullunderline.svg", alt="fullunderline")
         
-    .col-4
+    .col.d-none.d-md-flex
       a.d-flex.justify-content-center(href="/") 
-        img.logo(src="/assets/logo.svg", alt="Logo")
-    .col-4
+        img.logo.flex-fill(src="/assets/logo.svg", alt="Logo")
+    .col-5
       a.d-flex.justify-content-center(href="/terminbuchen")
         .tb
           //- include ../dist/assets/tbhintergrund.svg
