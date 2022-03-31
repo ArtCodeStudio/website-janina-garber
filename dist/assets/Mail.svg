@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="13.46667mm"
+   height="6.3499999mm"
+   viewBox="0 0 13.46667 6.3499999"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="Mail.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="17.597674"
+     inkscape:cx="26.25347"
+     inkscape:cy="15.96802"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-right="5"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-51.90069,-214.89716)">
+    <path
+       d="m 59.83819,214.89716 h -7.40833 a 0.52916666,0.52916666 0 0 0 -0.52917,0.5291 v 0.8885 l 4.23333,1.6933 4.23334,-1.6933 v -0.8885 a 0.52916666,0.52916666 0 0 0 -0.52917,-0.5291 z m -7.9375,2.2817 v 3.5391 a 0.52916666,0.52916666 0 0 0 0.52917,0.5292 h 7.40833 a 0.52916666,0.52916666 0 0 0 0.52917,-0.5292 v -3.5391 l -4.23334,1.6934 z"
+       id="path141909"
+       style="stroke-width:0.264583" />
+  </g>
+</svg>
