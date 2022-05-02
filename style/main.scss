@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 // Bootstrap
 @import "bootstrap";
@@ -13,11 +13,55 @@
 @import "header";
 @import "sidebar";
 
+
+/* indie-flower-regular - latin */
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/indie-flower-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/indie-flower-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/indie-flower-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/indie-flower-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/indie-flower-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/indie-flower-v17-latin-regular.svg#IndieFlower') format('svg'); /* Legacy iOS */
+  }
+
+  /* sunflower-300 - latin */
+@font-face {
+    font-family: 'Sunflower';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/sunflower-v14-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/sunflower-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/sunflower-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/sunflower-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/sunflower-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/sunflower-v14-latin-300.svg#Sunflower') format('svg'); /* Legacy iOS */
+  }
+  
+
 .schrift {
     font-family: "Indie Flower", cursive;
     font-size: 35px;
     color: black;
 }
+
+.schrift2 {
+    font-family:"Sunflower";
+    font-size: 23px;
+    color: black;
+}
+
+.schrift3 {
+    font-family: "Sunflower";
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
 .navbar {
     align-items: center;
 }
@@ -32,7 +76,6 @@
         color: #000000;
         text-decoration: underline;
 
-        
     }
     &:visited {
         color: #000000;
@@ -40,7 +83,7 @@
     &:active {
         color: #000000;
     }
-    
+
 }
 
 
@@ -51,7 +94,6 @@
     width: 300px;
     height: auto;
     transition: all 200ms ease-in-out;
-    
 
     .on-normal {
         display: block;
@@ -72,6 +114,7 @@
         transform: scale(1.05);
         
     }
+
 }
 
 
@@ -93,19 +136,10 @@
 .main-content {
     min-height: 60vh;
     margin-top: 125px;
-}
-
-.schrift2 {
-    font-family: "Ubuntu";
-    font-size: 25px;
-    color: black;
-
-
+    background-color: $green-200;
 }
 
 .jp {
     max-width: 85%;
     max-height: 85%;
-
-
 }

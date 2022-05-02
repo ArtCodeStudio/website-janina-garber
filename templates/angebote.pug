@@ -2,10 +2,30 @@
 extends ../layout/default.pug
 
 block content
-  .container
+  .container.bg-secondary.pt-5
     .row
-      .col
-        h1 Angebot
-        h1 Preise
-        include ../partials/test.html
-        include ../partials/test.pug
+      .col.pt-4
+        h1.schrift.text-center Angebote   
+        .row
+          .col-6
+            p Nach erfolgreicher Beendigung der Ausbildung zur staatlich anerkannten Physiotherapeutin bilde ich mich stetig in den Bereichen der Humanosteopathie fort. Daraus ergeben sich folgende Behandlungsmöglichkeiten für Dich:
+            ul
+              li Allgemeine Krankengymnastik
+              li Massagetherapie 
+              li Manuelle Lymphdrainage
+              li Fußreflexzonentherapie
+              li Taping
+              li Kiefergelenksbehandlungen (CMD)
+              li Cranio-sacrale Therapie 
+              li KG nach Bobath
+            p Berufsbegleitend absolvierte ich eine Ausbildung zur Pferdeosteopathin an der Fachschule Welter-Böller.
+              ul Für Dein Pferd biete ich diese Behandlungen an:
+                li Befund und osteopathische Behandlung mit Trainingsempfehlung
+                li Tape
+                li Faszientherapie (MFR)
+                li  Stresspunktbehandlung
+                li  Massagetherapie
+                li  Körperarbeit (Behandlungstechnik zur Verbesserung der Körperwahrnehmung für Dein Pferd)
+          .col-6.d-flex.justify-content-center.align-items-center
+            img.img-fluid.jp(src="/assets/janina+pferd.jpg")
+    p.schrift2.text-center 
