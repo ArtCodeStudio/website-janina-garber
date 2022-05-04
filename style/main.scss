@@ -143,3 +143,12 @@
     max-width: 85%;
     max-height: 85%;
 }
+
+.img-text-wrapper {
+    position: relative;
+    .text-content {
+        position: absolute;
+        top: 0;
+        color: white;
+    }
+}
