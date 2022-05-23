@@ -2,14 +2,14 @@
 extends ../layout/default.pug
 
 block content
-  .container.bg-secondary.pt-5
+  .container.schrift3.pt-5.mx-auto.w-50
     .row
-      .col.pt-4
-        h1.schrift.text-center Angebote   
+      .col
+        .text.schrift.fs-1.strong.text-center.px-4.mt-4 Angebote   
         .row
           .col-5
             img.img-fluid.jp(src="/assets/Pferdeostepathie-logo.svg")
-          .col-7.schrift.fs-5
+          .col-7.schrift2.fs-5
             p Nach erfolgreicher Beendigung der Ausbildung zur staatlich anerkannten Physiotherapeutin bilde ich mich stetig in den Bereichen der Humanosteopathie fort. Daraus ergeben sich folgende Behandlungsmöglichkeiten für Dich:
             ul
               li Allgemeine Krankengymnastik
@@ -28,26 +28,17 @@ block content
                 li  Stresspunktbehandlung
                 li  Massagetherapie
                 li  Körperarbeit (Behandlungstechnik zur Verbesserung der Körperwahrnehmung für Dein Pferd)
+    h1.schrift2.u.text-center.fs-4.pb-3.mt-4 Sitzschulung und Reitunterricht
+      ul.schrift2.fs-5.text-center.pb-3.mt-4 Es besteht die Möglichkeit, Termine zum Reitunterricht bei Dir vor Ort zu vereinbaren. Reitunterricht meint in diesem Fall weniger das Erlernen neuer Lektionen. Das Hauptaugenmerk liegt hier vor allem auf einer Verbesserung von Sitz und Hilfegebung des Reiters.
+        li Eine Einheit dauert 30 - 40 Minuten und beläuft sich auf 35,-, ab 20km Fahrstrecke zzgl. Fahrtkosten nach Absprache.
+        li Je nach den Gegebenheiten vor Ort können auch mehrere Personen zusammen einen Termin buchen. Genauere Konditionen werden individuell zusammen entschieden.
     .card.bg-secondary.border-0.pr-1.shadow-lg
       .row
         .col-5
           img.img-fluid.rounded.mx-auto.dblock(src="/assets/schimmel.png")
-          //- img-fluid(src="/assets/schimmel.png")
-          //-img-fluid-right.dblock.mx-auto
         .col-7.schrift.fs-6
           .h1.bg-primary 
-          .card-title.u.strong.fs-1.text-center.text-dark.pb-4.mt-5 Senioren und/oder Schulpferde Tarif
-          .p.text-muted.fw-bold.fs-5.text-center.mt-4 Für alte Pferde, die ihren Ruhestand genießen dürfen, biete ich Behandlungen zu vergünstigten Konditionen an.
+          .card-title.u.strong.fs-1.text-center.text-dark.pb-3.mt-4 Senioren und/oder Schulpferde Tarif
+          .p.schrift2.text-muted.fs-4.text-center.mt-4 Für alte Pferde, die ihren Ruhestand genießen dürfen, biete ich Behandlungen zu vergünstigten Konditionen an.
             | Dasselbe gilt für aktive Schulpferde und -ponies, die einen tollen Job machen und höchsten Respekt verdienen. 
             | Sprecht mich gerne an, wenn ihr ein Seniorpferd besitzt oder Betreiber einer Reitschule seid!
-//- .badge.bg-primary.text-wrap(style="width: 6rem;")
-//- //- picture with text to learn
-//-  .container-sm.bg-primary.pt-5.pr-5
-//-    .row
-//-      .col.img-text-wrapper
-//-        img.img-fluid(src="/assets/schimmel.png")
-//-        .text-content
-//-          h1 Senioren und/oder Schulpferde Tarif
-//-           | Für alte Pferde, die ihren Ruhestand genießen dürfen, biete ich Behandlungen zu vergünstigten Konditionen an.
-//-           | Dasselbe gilt für aktive Schulpferde und -ponies, die einen tollen Job machen und höchsten Respekt verdienen. 
-//-           | Sprecht mich gerne an, wenn ihr ein Seniorpferd besitzt oder Betreiber einer Reitschule seid!

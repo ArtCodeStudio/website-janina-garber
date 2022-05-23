@@ -1,6 +1,7 @@
 $enable-rounded: false;
 
 $green-500: #91BCA0;
+$green-300: #b3dac0;
 $green-200: #e0f7e8;
 
 $primary: $green-500;
@@ -17,6 +18,11 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark
+);
+
+$table-variants: (
+  "primary":    $primary,
+  "secondary":  $secondary,
 );
 
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");

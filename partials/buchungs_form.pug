@@ -1,0 +1,50 @@
+form#form-validation.container(novalidate="")
+  .row
+    .col-12.col-lg-6.mb-3
+      label(for='validation1') Dein Vorname    
+      input#validation1.form-control(type='text', placeholder='Vorname', value='', required='')
+      .invalid-feedback
+        | Gib hier Deinen Vornamen ein.  
+    .col-12.col-lg-6.mb-3
+      label(for='validation2') Dein Nachname    
+      input#validation2.form-control(type='text', placeholder='Nachname', value='', required='') 
+      .invalid-feedback
+        | Gib hier Deinen Nachnamen ein.      
+  .row
+    .col-12.col-lg-6.mb-3
+      label(for='validation3') Deine Stadt    
+      input#validation3.form-control(type='text', placeholder='Ortschaft', required='')    
+      .invalid-feedback
+        | Gib hier Deine Stadt ein.   
+    .col-12.col-lg-6.mb-3
+      label(for='validation5') Deine Postleitzahl    
+      input#validation5.form-control(type='text', placeholder='Plz', required='')    
+      .invalid-feedback
+        | Gib hier Deine Postleitzahl ein. 
+    .col-12.col-lg-6.mb-3
+      label(for='validation4') Deine Rückrufnummer    
+      input#validation4.form-control(type='text', placeholder='Telefonnummer', required='')    
+      .invalid-feedback
+        | Gib hier Deine Rückrufnummer ein.   
+  button#submit-button.btn.btn-secondary.btn-md.bg-dark.text-light.text-center(type='submit') Absenden
+script.
+  // Custom JavaScript for Validation
+  window.addEventListener("load", function() {
+    const form = document.getElementById("form-validation");
+    const button = document.getElementById("submit-button");
+    const allInputs = document.querySelectorAll("input");
+    function onSubmit(event) {
+      console.debug("submit", form);
+      for(input of allInputs) {
+        if (input.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+      }
+
+      form.classList.add("was-validated");
+    }
+    form.addEventListener("submit", onSubmit);
+    button.addEventListener("click", onSubmit);
+  }, false);
+      

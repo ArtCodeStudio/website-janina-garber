@@ -1,0 +1,18 @@
+.table.table-primary {
+  --bs-table-accent-bg: #{$green-200};
+  :hover {
+    --bs-table-hover-bg: #{$green-300};
+  }
+
+  // tr {
+  //   height: 100px;
+  //   vertical-align: middle;
+  // }
+}
+
+.table.table-lg {
+  tr {
+    height: 80px;
+    vertical-align: middle;
+  }
+}

@@ -2,15 +2,42 @@
 extends ../layout/default.pug
 
 block content
-  .container.schrift.pt-5.mx-auto.w-50
+  .container.schrift3.pt-5.mx-auto.w-50
     .row
       .col
-        .text.schrift.fs-1.strong.text-center.px-4.mt-4 Preiseliste
-          //- .text.schrift.fs-2.strong.px-2.text-center Pferd
-          .p.pt-2.fs-4.d-grid.gap-0.px-5.mt-4
-            li Erstbehandlung     130 €
-            li Nachbehandlung (innerhalb eines Jahres)   90 €
-            li Tapeanlage (als Einzelbuchung, sonst inklusive)     25  €
-            li Massage / Faszienbehandlung / Körperarbeit (als Einzelbuchung, sonst inklusive) 60  €
-            br 
-            li Fahrtkosten bis 25km inklusive, danach 0,60 € / km
+        .text.schrift.fs-1.strong.text-center.px-4.mt-4 Preise
+        .br
+            table.table.table-primary.table-lg.table-striped.table-hover.schrift-3.fs-3.pt-3.mt-5.h-auto
+                thead
+                  tr.schrift-3
+                    th(scope='col') Therapie
+                    |      
+                    th(scope='col') Preis
+                    |
+                tbody
+                  tr
+                    th(scope='row') Erstbehandlung
+                    |
+                    td 130 €
+                  |
+                  tr
+                    th(scope='row') Nachbehandlung (innerhalb eines Jahres)
+                    |
+                    td 90 €
+                  |
+                  tr
+                    th(scope='row') Tapeanlage (als Einzelbuchung, sonst inklusive)
+                    |
+                    td 25 €
+                  |
+                  tr
+                    th(scope='row') Massage / Faszienbehandlung / Körperarbeit (als Einzelbuchung, sonst inklusive)
+                    |
+                    td 60 €
+                  |
+                  tr
+                    th(scope='row') Sitzschulung und Reitunterricht
+                    |
+                    td 35 €
+                  |
+            p.text-center.mt-3.pt-5.schrift Fahrtkosten bis 25km inklusive, danach 0,60 € / km
