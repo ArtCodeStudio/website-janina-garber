@@ -1,0 +1,21 @@
+.bg-wavebright {
+  height: 25px;
+  background-image: url(/assets/wavebright.svg);
+  background-repeat: repeat-x;
+  background-color: $secondary;
+}
+
+.bg-wave-light-green {
+  height: 60px;
+  background-image: url(/assets/wave-light-green.svg);
+  background-repeat: repeat-x;
+  z-index: 1;
+  position: relative;
+  &.wave-top {
+    margin-bottom: -65px;
+  }
+  &.wave-bottom {
+    margin-top: -30px;
+  }
+}
+
