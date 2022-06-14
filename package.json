@@ -15,7 +15,8 @@
     "watch:webpack": "npm run build:webpack -- --watch",
     "start:watch": "concurrently --kill-others 'npm:watch:*'",
     "start:watch2": "npm run watch:templates & npm run watch:sass",
-    "start:serve": "reload --hostname localhost --port 3000 --dir dist --browser",
+    "start:serve2": "reload --hostname localhost --port 3000 --dir dist --browser",
+    "start:serve": "node server/index.js",
     "start": "concurrently --kill-others 'npm:start:*'"
   },
   "repository": {
@@ -49,6 +50,7 @@
     "@ribajs/extras": "^2.0.0-alpha.2",
     "@ribajs/router": "^2.0.0-alpha.2",
     "@ribajs/types": "^2.0.0-alpha.2",
-    "@ribajs/utils": "^2.0.0-alpha.2"
+    "@ribajs/utils": "^2.0.0-alpha.2",
+    "express": "^4.18.1"
   }
 }

@@ -4,6 +4,7 @@ import { join } from 'path'
 import reload from 'reload'
 import json from 'body-parser'
 import * as url from 'url';
+import fs from 'fs'
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
@@ -19,22 +20,6 @@ app.get('/', function (req, res) {
   res.sendFile(join(publicDir, 'index.html'))
 })
 
-app.get('/angebote', function (req, res) {
-  res.sendFile(join(publicDir, 'angebote.html'))
-})
-
-app.get('/preise', function (req, res) {
-  res.sendFile(join(publicDir, 'preise.html'))
-})
-
-app.get('/ablauf', function (req, res) {
-  res.sendFile(join(publicDir, 'ablauf.html'))
-})
-
-app.get('/terminbuchen', function (req, res) {
-  res.sendFile(join(publicDir, 'terminbuchen.html'))
-})
-
 app.get('/test', function (req, res) {
   res.send("Hello world!");
 })
@@ -43,6 +28,16 @@ app.get('/send-mail', function (req, res) {
   console.debug("TODO: send mail");
   res.send("TODO");
 })
+
+app.get('/:foobar', function (req, res) {
+  const file = join(publicDir, req.params.foobar + '.html');
+  if (fs.existsSync(file)) {
+    res.sendFile(file)
+  } else {
+    res.sendFile(join(publicDir, 'index.html'))
+  }
+})
+
 
 var server = createServer(app);
 
